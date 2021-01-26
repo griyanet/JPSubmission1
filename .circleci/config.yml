@@ -1,35 +1,40 @@
-version: 2
-jobs:
-  build:
-    working_directory: ~/code
-    docker:
-      - image: circleci/android:api-25-alpha
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
-    environment:
-      JVM_OPTS: -Xmx3200m
-    steps:
-      - checkout
-      - restore_cache:
-          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-#      - run:
-#         name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-#          command: sudo chmod +x ./gradlew
-      - run:
-          name: Download Dependencies
-          command: sudo chmod +x ./gradlew androidDependencies
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-      - run:
-          name: Run Tests
-          command: sudo chmod +x ./gradlew lint test
-      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
-          path: app/build/reports
-          destination: reports
-      - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
-          path: app/build/test-results
-      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+general:
+    artifacts:
+        - /home/ubuntu/AndroidCI/app/build/outputs/apk/
 
+machine:
+    environment:
+        ANDROID_HOME: /usr/local/android-sdk-linux
+        ADB_INSTALL_TIMEOUT: 60
+        GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx3072M -XX:+HeapDumpOnOutOfMemoryError"'
+    java:
+        version: oraclejdk8
+
+dependencies:
+    pre:
+        - touch app/google-services.json
+        - echo $GOOGLE_SERVICES_JSON > app/google-services.json
+        - echo y | android update sdk --no-ui --all --filter "tools,android-24,build-tools-24.0.0,platform-tools,extra-android-m2repository,extra-android-support,extra-google-m2repository,extra-google-google_play_services"
+    cache_directories:
+        - /usr/local/android-sdk-linux/tools
+        - /usr/local/android-sdk-linux/build-tools/24.0.0
+
+# Comment the test stuff out (or remove it) if you don't need it.
+test:
+  pre:
+    - emulator -avd circleci-android22 -no-audio -no-window:
+          background: true
+          parallel: true
+    - circle-android wait-for-boot
+    # unlock emulator
+    - sleep 30
+    - adb shell input keyevent 82
+
+  override:
+#    - ./gradlew clean assemble
+    # This will run the tests:
+   - ./gradlew assemble connectedDebugAndroidTest -PdisablePreDex --console=plain --info
+
+  post:
+      - cp -r app/build/outputs $CIRCLE_ARTIFACTS
+      - cp -r app/build/outputs/androidTest-results/connected/ $CIRCLE_TEST_REPORTS
