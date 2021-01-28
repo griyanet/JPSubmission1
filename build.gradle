@@ -6,6 +6,8 @@ buildscript {
         appCompatVersion = '1.2.0'
         recyclerViewVersion = '1.1.0'
         fragmentVersion = '1.2.5'
+        constraintLayoutVersion = '2.0.4'
+        materialVersion = '1.2.1'
         navVersion = '2.3.2'
         lifecycleVersion = '2.2.0'
         roomVersion = '2.2.6'
