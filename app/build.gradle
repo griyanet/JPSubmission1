@@ -22,21 +22,17 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField('string', 'MOVIE_DB_API', 'API_KEY')
+            //buildConfigField('string', 'MOVIE_DB_API', 'API_KEY')
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField('string', 'MOVIE_DB_API', 'API_KEY')
+            //buildConfigField('string', 'MOVIE_DB_API', 'API_KEY')
         }
     }
 
     buildFeatures {
         viewBinding true
-    }
-
-    buildFeatures {
-        dataBinding true
     }
 
     compileOptions {
@@ -90,6 +86,10 @@ dependencies {
 
     //glide
     implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
     //picaso
     implementation "com.squareup.picasso:picasso:$picassoVersion"
@@ -102,5 +102,12 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$espressoVersion"
     androidTestImplementation "androidx.test:runner:$androidTestVersion"
     androidTestImplementation "androidx.test:rules:$androidTestVersion"
-    androidTestImplementation "androidx.room:room-testing:$roomVersion"
+    androidTestImplementation "androidx.test.ext:junit:$junitExtversion"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+    testImplementation "com.google.truth:truth:1.1.2"
+    testImplementation "androidx.arch.core:core-testing:$archTestingVersion"
+    androidTestImplementation "org.mockito:mockito-core:$mockitoVersion"
+    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:$dexMakerVersion"
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
 }
