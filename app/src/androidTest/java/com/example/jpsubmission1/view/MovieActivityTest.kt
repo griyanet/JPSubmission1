@@ -21,10 +21,11 @@ class MovieActivityTest {
         ActivityScenario.launch(MovieActivity::class.java)
     }
 
+    // test utk melihat apakan Recyclerview ter-display dengan baik dan scroll sampe ke list terbawah
     @Test
     fun loadMovies() {
-        onView(withId(R.id.fragment_movie)).check(matches(isDisplayed()))
-        Thread.sleep(4000)
-        onView(withId(R.id.fragment_movie)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(dummyMovies.size))
+        onView(withId(R.id.rv_tvShows)).check(matches(isDisplayed()))
+        Thread.sleep(3000)
+        onView(withId(R.id.rv_tvShows)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(dummyMovies.size))
     }
 }

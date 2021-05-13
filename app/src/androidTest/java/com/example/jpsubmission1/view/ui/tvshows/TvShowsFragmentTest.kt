@@ -6,17 +6,13 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.action.ViewActions.swipeUp
-import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
-import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.example.jpsubmission1.R
-import com.example.jpsubmission1.view.ui.movies.TvShowsAdapter
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -35,29 +31,34 @@ class TvShowsFragmentTest {
         }
 
     @Test
-    fun testNavigationToTvShowDetailScreen() {
-
+    fun loadTvShow() {
         val tvShows = viewModel.getTvShows()
-        val tvShow01 = viewModel.getTvShows()[0]
+        val tvShow05 = viewModel.getTvShows()[5]
+        val tvShowScenario = launchFragmentInContainer<TvShowsFragment>(Bundle(), R.style.Theme_JPSubmission1)
+        onView(withId(R.id.rv_tvShows)).check(matches(isDisplayed()))
+//        onView(withId(R.id.item_tv_show_fragment)).check(matches(isDisplayed()))
+        onView(withId(R.id.rv_tvShows)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(tvShows.size))
+//        onView(withId(R.id.img_tv_show)).check(matches(isDisplayed()))
+//        onView(withId(R.id.img_tv_show)).check(matches(withText("${tvShow05.image}")))
+    }
+
+    @Test
+    fun testNavigationToTvShowDetailScreen() {
+        val tvShow05 = viewModel.getTvShows()[5]
         val tvShowScenario = launchFragmentInContainer<TvShowsFragment>(Bundle(), R.style.Theme_JPSubmission1)
         val navController = mock(NavController::class.java)
         tvShowScenario.onFragment {
             Navigation.setViewNavController(it.view!!, navController)
         }
 
-        onView(withId(R.id.tvShow_fragment)).check(ViewAssertions.matches(isDisplayed()))
-        Thread.sleep(4000)
-        onView(withId(R.id.tvShow_fragment))
-            .perform(swipeUp())
-            .perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(tvShows.size))
-            .perform(swipeUp())
-            .perform(RecyclerViewActions.actionOnItem<RecyclerView.ViewHolder>(
-                withText(tvShow01.title), click()
-            ))
-            .perform(RecyclerViewActions.actionOnItemAtPosition<TvShowsAdapter.TvShowsViewHolder>(0, click()))
-        Thread.sleep(4000)
+        onView(withId(R.id.rv_tvShows)).check(matches(isDisplayed()))
+        Thread.sleep(3000)
+        onView(withId(R.id.rv_tvShows))
+            .perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(5))
+            .perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(5, click()))
+        Thread.sleep(3000)
         verify(navController).navigate(
-            TvShowsFragmentDirections.actionTvShowsToTvShowsDetailsFragment(tvShow01)
+            TvShowsFragmentDirections.actionTvShowsToTvShowsDetailsFragment(tvShow05)
         )
     }
 }

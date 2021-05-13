@@ -5,11 +5,13 @@
     android:id="@+id/tvShow_detail_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".view.ui.tvshows.TvShowsDetailsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/detail_tvShow">
 
         <ImageView
             android:id="@+id/img_tv_shows_backdrop"
