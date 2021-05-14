@@ -31,18 +31,6 @@ class TvShowsFragmentTest {
         }
 
     @Test
-    fun loadTvShow() {
-        val tvShows = viewModel.getTvShows()
-        val tvShow05 = viewModel.getTvShows()[5]
-        val tvShowScenario = launchFragmentInContainer<TvShowsFragment>(Bundle(), R.style.Theme_JPSubmission1)
-        onView(withId(R.id.rv_tvShows)).check(matches(isDisplayed()))
-//        onView(withId(R.id.item_tv_show_fragment)).check(matches(isDisplayed()))
-        onView(withId(R.id.rv_tvShows)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(tvShows.size))
-//        onView(withId(R.id.img_tv_show)).check(matches(isDisplayed()))
-//        onView(withId(R.id.img_tv_show)).check(matches(withText("${tvShow05.image}")))
-    }
-
-    @Test
     fun testNavigationToTvShowDetailScreen() {
         val tvShow05 = viewModel.getTvShows()[5]
         val tvShowScenario = launchFragmentInContainer<TvShowsFragment>(Bundle(), R.style.Theme_JPSubmission1)
