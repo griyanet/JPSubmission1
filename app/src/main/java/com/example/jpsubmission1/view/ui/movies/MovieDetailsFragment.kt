@@ -1,15 +1,17 @@
 package com.example.jpsubmission1.view.ui.movies
 
+import android.app.Application
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.OneShotPreDrawListener.add
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import com.example.jpsubmission1.R
 import com.example.jpsubmission1.data.FavoritesMovie
+import com.example.jpsubmission1.data.Movies
 import com.example.jpsubmission1.databinding.FragmentMovieDetailsBinding
 import com.example.jpsubmission1.utils.snack
 import com.example.jpsubmission1.view.ui.favorites.FavoritesViewModel
@@ -18,6 +20,7 @@ class MovieDetailsFragment : Fragment() {
 
     private lateinit var movieDetail: FragmentMovieDetailsBinding
     private val args by navArgs<MovieDetailsFragmentArgs>()
+    private lateinit var viewModelFav: FavoritesViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,7 +35,10 @@ class MovieDetailsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[MovieDetailViewModel::class.java]
+        val viewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.NewInstanceFactory()
+        )[MovieDetailViewModel::class.java]
         val movieId = args.movies.movieId
         if (movieId != null) {
             viewModel.selectedMovie(movieId)
@@ -53,7 +59,4 @@ class MovieDetailsFragment : Fragment() {
             movieDetail.movieDetail.snack(R.string.addFavorite)
         }
     }
-
-
-
 }

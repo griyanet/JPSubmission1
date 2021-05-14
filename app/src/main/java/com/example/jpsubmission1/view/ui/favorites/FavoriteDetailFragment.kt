@@ -28,19 +28,20 @@ class FavoriteDetailFragment : Fragment() {
 
         val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FavoriteDetailViewModel::class.java]
 
-        val favMovieId = args.favmovies.movieId
+        val favMovieId = args.favmovies.favMovieId
         if (favMovieId != null) {
             viewModel.selectedFavMovie(favMovieId)
         }
-        val favMovies = viewModel.getFavoriteMovies()
+        val favMovie = viewModel.getFavoriteMovies()
 
         with(binding) {
-            imgBackdrop.setImageResource(favMovies.image)
-            imgPoster.setImageResource(favMovies.image)
-            tvMovieTitle.text = favMovies.original_title
-            tvReleaseYear.text = favMovies.release_date
-            tvBudget.text = favMovies.budget.toString()
-            tvRevenue.text = favMovies.revenue.toString()
+            favImgBackdrop.setImageResource(favMovie.image)
+            favImgPoster.setImageResource(favMovie.image)
+            tvFavTitle.text = favMovie.original_title
+            tvFavReleaseYear.text = favMovie.release_date
+            tvFavBudget.text = favMovie.budget.toString()
+            tvFavRevenue.text = favMovie.revenue.toString()
+            tvFavSynopsis.text = favMovie.overview
         }
     }
 

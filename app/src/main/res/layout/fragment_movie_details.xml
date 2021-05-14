@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/movie_detail"
@@ -153,6 +154,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:textSize="14sp"
             android:text="@string/large_text" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -160,6 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/ic_add_favorite"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_poster"
@@ -167,8 +170,9 @@
             android:layout_marginTop="220dp"
             android:layout_marginStart="160dp"
             android:layout_marginEnd="16dp"
-            android:foregroundTint="@color/white"
-            android:backgroundTint="#D5F44336"/>
+            android:contentDescription="@string/fab"
+            android:theme="@style/FormButton"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

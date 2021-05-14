@@ -16,8 +16,8 @@ object DataDummy {
                 "A Star is born",
                 "10/05/2018",
                 "Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.",
-                36000000.00,
-                433888866.00,
+                "$36,000,000.00",
+                "$433,888,866.00",
                 R.drawable.poster_a_star_is_born
             )
         )
@@ -27,8 +27,8 @@ object DataDummy {
                 "Alita: Batlle Angel",
                 "02/14/2019",
                 "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
-                170000000.00,
-                404852543.00,
+                "$170,000,000.00",
+                "$404,852,543.00",
                 R.drawable.poster_alita
             )
         )
@@ -38,8 +38,8 @@ object DataDummy {
                 "Aquaman",
                 "12/21/2018",
                 "Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
-                160000000.00,
-                1148461807.00,
+                "$160,000,000.00",
+                "$1,148,461,807.00",
                 R.drawable.poster_aquaman
             )
         )
@@ -49,8 +49,8 @@ object DataDummy {
                 "Bohemian Rhapsody",
                 "02/11/2018",
                 "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
-                52000000.00,
-                894027543.00,
+                "$52,000,000.00",
+                "$894,027,543.00",
                 R.drawable.poster_bohemian
             )
         )
@@ -60,8 +60,8 @@ object DataDummy {
                 "Cold Pursuit",
                 "02/08/2019",
                 "The quiet family life of Nels Coxman, a snowplow driver, is upended after his son's murder. Nels begins a vengeful hunt for Viking, the drug lord he holds responsible for the killing, eliminating Viking's associates one by one. As Nels draws closer to Viking, his actions bring even more unexpected and violent consequences, as he proves that revenge is all in the execution.",
-                60000000.00,
-                76419755.00,
+                "$60,000,000.00",
+                "$76,419,755.00",
                 R.drawable.poster_cold_persuit
             )
         )
@@ -71,8 +71,8 @@ object DataDummy {
                 "Fantastic Beasts: The Crimes of Grindelwald",
                 "11/16/2018",
                 "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead.",
-                200000000.00,
-                653355901.00,
+                "$200,000,000.00",
+                "$653,355,901.00",
                 R.drawable.poster_crimes
             )
         )
@@ -82,8 +82,8 @@ object DataDummy {
                 "Glass",
                 "01/18/2019",
                 "Gellert In a series of escalating encounters, former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.",
-                20000000.00,
-                246941965.00,
+                "$20,000,000.00",
+                "$246,941,965.00",
                 R.drawable.poster_glass
             )
         )
@@ -93,8 +93,8 @@ object DataDummy {
                 "How to Train Your Dragon",
                 "03/26/2010",
                 "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces a rite of passage: he must kill a dragon to prove his warrior mettle. But after downing a feared dragon, he realizes that he no longer wants to destroy it, and instead befriends the beast – which he names Toothless – much to the chagrin of his warrior father",
-                165000000.00,
-                494878759.00,
+                "$165,000,000.00",
+                "$494,878,759.00",
                 R.drawable.poster_how_to_train
             )
         )
@@ -104,8 +104,8 @@ object DataDummy {
                 "Avengers: Infinity War",
                 "12/21/2018",
                 "In 1561, Mary Stuart, widow of the King of France, returns to Scotland, reclaims her rightful throne and menaces the future of Queen Elizabeth I as ruler of England, because she has a legitimate claim to the English throne. Betrayals, rebellions, conspiracies and their own life choices imperil both Queens. They experience the bitter cost of power, until their tragic fate is finally fulfilled.",
-                25000000.00,
-                37807625.00,
+                "$25,000,000.00",
+                "$37,807,625.00",
                 R.drawable.poster_infinity_war
             )
         )
@@ -115,8 +115,8 @@ object DataDummy {
                 "Master Z: Ip Man Legacy",
                 "12/26/2018",
                 "Following his defeat by Master Ip, Cheung Tin Chi tries to make a life with his young son in Hong Kong, waiting tables at a bar that caters to expats. But it's not long before the mix of foreigners, money, and triad leaders draw him once again to the fight.",
-                36000000.00,
-                433888866.00,
+                "$36,000,000.00",
+                "$433,888,866.00",
                 R.drawable.poster_master_z
             )
         )
@@ -126,8 +126,8 @@ object DataDummy {
                 "Mortal Engines",
                 "12/14/2018",
                 "Many thousands of years in the future, Earth’s cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.",
-                100000000.00,
-                83672673.00,
+                "$100,000,000.00",
+                "$83,672,673.00",
                 R.drawable.poster_mortal_engines
             )
         )
@@ -137,8 +137,8 @@ object DataDummy {
                 "Overlord",
                 "11/09/2018",
                 "France, June 1944. On the eve of D-Day, some American paratroopers fall behind enemy lines after their aircraft crashes while on a mission to destroy a radio tower in a small village near the beaches of Normandy. After reaching their target, the surviving paratroopers realise that, in addition to fighting the Nazi troops that patrol the village, they also must fight against something else.",
-                38000000.00,
-                41657844.00,
+                "$38,000,000.00",
+                "$41,657,844.00",
                 R.drawable.poster_overlord
             )
         )
@@ -148,8 +148,8 @@ object DataDummy {
                 "Ralph Breaks the Internet",
                 "11/21/2018",
                 "Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet — the netizens — to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
-                175000000.00,
-                529221154.00,
+                "$175,000,000.00",
+                "$529,221,154.00",
                 R.drawable.poster_ralph
             )
         )
@@ -159,8 +159,8 @@ object DataDummy {
                 "Robin Hood",
                 "11/21/2018",
                 "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
-                100000000.00,
-                86493046.00,
+                "$100,000,000.00",
+                "$86,493,046.00",
                 R.drawable.poster_robin_hood
             )
         )
@@ -170,8 +170,8 @@ object DataDummy {
                 "Serenity",
                 "01/25/2019",
                 "The quiet life of Baker Dill, a fishing boat captain who lives on the isolated Plymouth Island, where he spends his days obsessed with capturing an elusive tuna while fighting his personal demons, is interrupted when someone from his past comes to him searching for help.",
-                25000000.00,
-                14454622.00,
+                "$25,000,000.00",
+                "$14,454,622.00",
                 R.drawable.poster_serenity
             )
         )
@@ -181,8 +181,8 @@ object DataDummy {
                 "Spider-Man: Into the Spider-Verse",
                 "12/14/2018",
                 "Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson \"Kingpin\" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
-                90000000.00,
-                375540831.00,
+                "$90,000,000.00",
+                "$375,540,831.00",
                 R.drawable.poster_spiderman
             )
         )
@@ -192,8 +192,8 @@ object DataDummy {
                 "A Star is born",
                 "10/05/2018",
                 "Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.",
-                36000000.00,
-                433888866.00,
+                "$36,000,000.00",
+                "$433,888,866.00",
                 R.drawable.poster_a_star_is_born
             )
         )
@@ -203,8 +203,8 @@ object DataDummy {
                 "T-34",
                 "01/01/2019",
                 "In 1944, a courageous group of Russian soldiers managed to escape from German captivity in a half-destroyed legendary T-34 tank. Those were the times of unforgettable bravery, fierce fighting, unbreakable love, and legendary miracles.",
-                8000000.00,
-                36220872.00,
+                "$8,000,000.00",
+                "$36,220,872.00",
                 R.drawable.poster_t34
             )
         )
@@ -361,152 +361,64 @@ object DataDummy {
         return tvShows
     }
 
-    fun generateFavoriteMovies(): List<FavoritesMovie> {
-        val movies = ArrayList<FavoritesMovie>()
+    fun generateFavorites(): List<FavoritesMovie> {
+        val favorites = ArrayList<FavoritesMovie>()
 
-        movies.add(
-            FavoritesMovie(
-                "m18",
-                "T-34",
-                "01/01/2019",
-                "In 1944, a courageous group of Russian soldiers managed to escape from German captivity in a half-destroyed legendary T-34 tank. Those were the times of unforgettable bravery, fierce fighting, unbreakable love, and legendary miracles.",
-                8000000.00,
-                36220872.00,
-                R.drawable.poster_t34
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m03",
-                "Aquaman",
-                "12/21/2018",
-                "Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
-                160000000.00,
-                1148461807.00,
-                R.drawable.poster_aquaman
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m05",
-                "Cold Pursuit",
-                "02/08/2019",
-                "The quiet family life of Nels Coxman, a snowplow driver, is upended after his son's murder. Nels begins a vengeful hunt for Viking, the drug lord he holds responsible for the killing, eliminating Viking's associates one by one. As Nels draws closer to Viking, his actions bring even more unexpected and violent consequences, as he proves that revenge is all in the execution.",
-                60000000.00,
-                76419755.00,
-                R.drawable.poster_cold_persuit
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m17",
-                "A Star is born",
-                "10/05/2018",
-                "Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.",
-                36000000.00,
-                433888866.00,
-                R.drawable.poster_a_star_is_born
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m06",
-                "Fantastic Beasts: The Crimes of Grindelwald",
-                "11/16/2018",
-                "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead.",
-                200000000.00,
-                653355901.00,
-                R.drawable.poster_crimes
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m04",
-                "Bohemian Rhapsody",
-                "02/11/2018",
-                "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
-                52000000.00,
-                894027543.00,
-                R.drawable.poster_bohemian
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m09",
-                "Avengers: Infinity War",
-                "12/21/2018",
-                "In 1561, Mary Stuart, widow of the King of France, returns to Scotland, reclaims her rightful throne and menaces the future of Queen Elizabeth I as ruler of England, because she has a legitimate claim to the English throne. Betrayals, rebellions, conspiracies and their own life choices imperil both Queens. They experience the bitter cost of power, until their tragic fate is finally fulfilled.",
-                25000000.00,
-                37807625.00,
-                R.drawable.poster_infinity_war
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m11",
-                "Mortal Engines",
-                "12/14/2018",
-                "Many thousands of years in the future, Earth’s cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.",
-                100000000.00,
-                83672673.00,
-                R.drawable.poster_mortal_engines
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m13",
-                "Ralph Breaks the Internet",
-                "11/21/2018",
-                "Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet — the netizens — to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
-                175000000.00,
-                529221154.00,
-                R.drawable.poster_ralph
-            )
-        )
-        movies.add(
-            FavoritesMovie(
-                "m10",
-                "Master Z: Ip Man Legacy",
-                "12/26/2018",
-                "Following his defeat by Master Ip, Cheung Tin Chi tries to make a life with his young son in Hong Kong, waiting tables at a bar that caters to expats. But it's not long before the mix of foreigners, money, and triad leaders draw him once again to the fight.",
-                36000000.00,
-                433888866.00,
-                R.drawable.poster_master_z
-            )
-        )
-        movies.add(
+        favorites.add(
             FavoritesMovie(
                 "m15",
                 "Serenity",
                 "01/25/2019",
                 "The quiet life of Baker Dill, a fishing boat captain who lives on the isolated Plymouth Island, where he spends his days obsessed with capturing an elusive tuna while fighting his personal demons, is interrupted when someone from his past comes to him searching for help.",
-                25000000.00,
-                14454622.00,
+                "$25,000,000.00",
+                "$14,454,622.00",
                 R.drawable.poster_serenity
             )
         )
-        movies.add(
+        favorites.add(
             FavoritesMovie(
-                "m14",
-                "Robin Hood",
-                "11/21/2018",
-                "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
-                100000000.00,
-                86493046.00,
-                R.drawable.poster_robin_hood
+                "m08",
+                "How to Train Your Dragon",
+                "03/26/2010",
+                "As the son of a Viking leader on the cusp of manhood, shy Hiccup Horrendous Haddock III faces a rite of passage: he must kill a dragon to prove his warrior mettle. But after downing a feared dragon, he realizes that he no longer wants to destroy it, and instead befriends the beast – which he names Toothless – much to the chagrin of his warrior father",
+                "$165,000,000.00",
+                "$494,878,759.00",
+                R.drawable.poster_how_to_train
             )
         )
-        movies.add(
+        favorites.add(
             FavoritesMovie(
-                "m16",
-                "Spider-Man: Into the Spider-Verse",
-                "12/14/2018",
-                "Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson \"Kingpin\" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
-                90000000.00,
-                375540831.00,
-                R.drawable.poster_spiderman
+                "m07",
+                "Glass",
+                "01/18/2019",
+                "Gellert In a series of escalating encounters, former security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.",
+                "$20,000,000.00",
+                "$246,941,965.00",
+                R.drawable.poster_glass
             )
         )
-        return movies
+        favorites.add(
+            FavoritesMovie(
+                "m04",
+                "Bohemian Rhapsody",
+                "02/11/2018",
+                "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
+                "$52,000,000.00",
+                "$894,027,543.00",
+                R.drawable.poster_bohemian
+            )
+        )
+        favorites.add(
+            FavoritesMovie(
+                "m01",
+                "A Star is born",
+                "10/05/2018",
+                "Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.",
+                "$36,000,000.00",
+                "$433,888,866.00",
+                R.drawable.poster_a_star_is_born
+            )
+        )
+        return favorites
     }
 }

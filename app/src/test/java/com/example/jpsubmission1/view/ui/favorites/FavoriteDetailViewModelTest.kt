@@ -8,8 +8,8 @@ import org.junit.Test
 class FavoriteDetailViewModelTest {
 
     lateinit var viewModel: FavoriteDetailViewModel
-    private val dummyFavorite = DataDummy.generateFavoriteMovies()[0]
-    private val favoriteId = dummyFavorite.movieId
+    private val dummyFavorite = DataDummy.generateFavorites()[4]
+    private val favoriteId = dummyFavorite.favMovieId
 
     @Before
     fun setUp() {
@@ -22,7 +22,7 @@ class FavoriteDetailViewModelTest {
         viewModel.selectedFavMovie(favoriteId)
         val favorites = viewModel.getFavoriteMovies()
         assertNotNull(favorites)
-        assertEquals(dummyFavorite.movieId, favorites.movieId)
+        assertEquals(dummyFavorite.favMovieId, favorites.favMovieId)
         assertEquals(dummyFavorite.original_title, favorites.original_title)
         assertEquals(dummyFavorite.release_date, favorites.release_date)
         assertEquals(dummyFavorite.overview, favorites.overview)

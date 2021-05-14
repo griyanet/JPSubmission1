@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/movies">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/movies"
@@ -62,5 +62,28 @@
         <argument
             android:name="favmovies"
             app:argType="com.example.jpsubmission1.data.FavoritesMovie" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.jpsubmission1.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_movies"
+            app:destination="@id/movies"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_splashPagerFragment"
+            app:destination="@id/splashPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashPagerFragment"
+        android:name="com.example.jpsubmission1.splash.SplashPagerFragment"
+        android:label="SplashPagerFragment" >
+        <action
+            android:id="@+id/action_splashPagerFragment_to_movies"
+            app:destination="@id/movies"
+            app:popUpTo="@id/splashPagerFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

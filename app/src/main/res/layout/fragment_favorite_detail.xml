@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/img_backdrop"
+            android:id="@+id/fav_img_backdrop"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:fitsSystemWindows="true"
@@ -23,7 +23,7 @@
             android:contentDescription="@string/backdrop_desc"/>
 
         <ImageView
-            android:id="@+id/img_poster"
+            android:id="@+id/fav_img_poster"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -36,14 +36,14 @@
             android:contentDescription="@string/poster_desc"/>
 
         <TextView
-            android:id="@+id/tv_movie_title"
+            android:id="@+id/tv_fav_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/movieTitle"
             android:textColor="#de000000"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@id/img_backdrop"
-            app:layout_constraintStart_toEndOf="@id/img_poster"
+            app:layout_constraintTop_toBottomOf="@id/fav_img_backdrop"
+            app:layout_constraintStart_toEndOf="@id/fav_img_poster"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
@@ -56,8 +56,8 @@
             android:layout_height="wrap_content"
             android:text="@string/lbl_releaseDate"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_movie_title"
-            app:layout_constraintStart_toEndOf="@id/img_poster"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav_title"
+            app:layout_constraintStart_toEndOf="@id/fav_img_poster"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="6dp"
             android:layout_marginStart="16dp"
@@ -65,13 +65,13 @@
         </TextView>
 
         <TextView
-            android:id="@+id/tv_release_year"
+            android:id="@+id/tv_fav_release_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/release_date"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/lbl_release_year"
-            app:layout_constraintStart_toEndOf="@id/img_poster"
+            app:layout_constraintStart_toEndOf="@id/fav_img_poster"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="0dp"
             android:layout_marginStart="16dp"
@@ -84,21 +84,21 @@
             android:layout_height="wrap_content"
             android:text="@string/lbl_budget"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_release_year"
-            app:layout_constraintStart_toEndOf="@id/img_poster"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav_release_year"
+            app:layout_constraintStart_toEndOf="@id/fav_img_poster"
             android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
         </TextView>
 
         <TextView
-            android:id="@+id/tv_budget"
+            android:id="@+id/tv_fav_budget"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/budget"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/lbl_budget"
-            app:layout_constraintStart_toEndOf="@id/img_poster"
+            app:layout_constraintStart_toEndOf="@id/fav_img_poster"
             android:layout_marginTop="0dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp">
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:text="@string/lbl_revenue"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_release_year"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav_release_year"
             app:layout_constraintStart_toEndOf="@id/lbl_budget"
             android:layout_marginTop="8dp"
             android:layout_marginStart="60dp"
@@ -118,7 +118,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/tv_revenue"
+            android:id="@+id/tv_fav_revenue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/revenue"
@@ -134,15 +134,16 @@
             android:id="@+id/lbl_synopsis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tv_revenue"
+            app:layout_constraintTop_toBottomOf="@id/tv_fav_revenue"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="20dp"
             android:layout_marginStart="16dp"
             android:text="@string/lbl_Synopsis">
         </TextView>
 
         <TextView
-            android:id="@+id/tv_synopsis"
+            android:id="@+id/tv_fav_synopsis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/lbl_synopsis"
@@ -152,6 +153,7 @@
             android:layout_marginTop="6dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:textSize="14sp"
             android:layout_marginBottom="16dp"
             android:text="@string/large_text" />
 

@@ -32,12 +32,12 @@ class FavoritesFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FavoritesViewModel::class.java]
-        val favMovie = viewModel.getFavorite()
+        val favMovie = viewModel.getFavorites()
 
         val favAdapter = FavoriteMoviesAdapter()
         favAdapter.setMovies(favMovie)
 
-        with(favBinding.rvMovie) {
+        with(favBinding.rvFavorite) {
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
             adapter = favAdapter

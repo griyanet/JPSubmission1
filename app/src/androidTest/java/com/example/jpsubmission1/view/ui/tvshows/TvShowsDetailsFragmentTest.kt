@@ -27,10 +27,15 @@ class TvShowsDetailsFragmentTest {
         viewModel.selectedTvShow(dummyTvShowArgId)
         val tvShows = viewModel.getTvShow()
         val tvShowScenario = launchFragmentInContainer<TvShowsDetailsFragment>(bundleOf("tvShows" to tvShows))
-        tvShowScenario.moveToState(Lifecycle.State.CREATED)
-        onView(withId(R.id.tvShow_detail_fragment)).check(matches(withEffectiveVisibility(
-            Visibility.VISIBLE)))
+        tvShowScenario.moveToState(Lifecycle.State.STARTED)
+        onView(withId(R.id.tvShow_detail_fragment)).check(matches(isDisplayed()))
+        onView(withId(R.id.img_tv_shows_backdrop)).check(matches(isDisplayed()))
+        onView(withId(R.id.img_tv_shows_poster)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_tvShows_title)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_tvShows_title)).check(matches(withText("${tvShows.title}")))
+        onView(withId(R.id.tv_tvShows_release_year)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_tvShows_release_year)).check(matches(withText("${tvShows.release_year}")))
+        onView(withId(R.id.tv_tvShow_synopsis)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_tvShow_synopsis)).check(matches(withText("${tvShows.overview}")))
     }
-
-
 }

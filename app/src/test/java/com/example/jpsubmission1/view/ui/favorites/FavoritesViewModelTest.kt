@@ -15,8 +15,8 @@ class FavoritesViewModelTest {
 
     @Test
     fun getFavorites() {
-        val favorites = viewModel.getFavorite()
+        val favorites = viewModel.getFavorites()
         assertNotNull(favorites)
-        assertEquals(13, favorites.size)
+        assertEquals(5, favorites.size)
     }
 }

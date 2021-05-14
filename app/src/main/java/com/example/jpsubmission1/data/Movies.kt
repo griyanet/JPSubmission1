@@ -9,8 +9,8 @@ data class Movies(
     var original_title: String,
     var release_date: String,
     var overview: String,
-    var budget: Double,
-    var revenue: Double,
+    var budget: String,
+    var revenue: String,
     var image: Int
     ) : Parcelable
 

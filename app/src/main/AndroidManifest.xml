@@ -10,12 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JPSubmission1">
 
-        <activity
-            android:name=".view.MovieActivity"
-            android:label="@string/title_activity_movie"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
